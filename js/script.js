@@ -1,9 +1,5 @@
 $(document).ready(function () {
-	//burger behaviour
-	$('.header__burger').click(function (event) {
-		$('.header__burger, .header__menu').toggleClass('active');
-		$('body').toggleClass('lock');
-	});
+	//burger behaviour on scroll
 	window.onscroll = function () { scrollFunction() };
 	function scrollFunction() {
 		if (document.documentElement.clientWidth > 992) {
@@ -16,4 +12,9 @@ $(document).ready(function () {
 			document.getElementById("header__body").style.height = "80px";
 		}
 	}
+	//burger behaviour on click
+	$('.header__burger').click(function (event) {
+		$('.header__burger, .header__menu').toggleClass('active');
+		$('body').toggleClass('lock');
+	});
 });
