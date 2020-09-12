@@ -4,7 +4,6 @@ html,
 body {
 	height: 100%;
 	font-family: "Montserrat", sans-serif;
-	background-color: #353535;
 }
 body {
 	@media (max-width: 767px) {
@@ -58,7 +57,7 @@ body {
 		max-width: 100%;
 		display: block;
 	}
-	@media (max-width: 992px){
+	@media (max-width: 992px) {
 		flex: 0 0 140px;
 	}
 	@media (max-width: 767px) {
@@ -158,12 +157,12 @@ body {
 	font-weight: 700;
 	font-size: 12px;
 	line-height: 14px;
-	@media (min-width: 768px){
-		&:hover{
+	@media (min-width: 768px) {
+		&:hover {
 			transition: all 0.3s ease 0s;
-			color: #065FA1;
+			color: #065fa1;
 			padding-bottom: 10px;
-			border-bottom: 2px solid #065FA1;
+			border-bottom: 2px solid #065fa1;
 		}
 	}
 	@media (max-width: 767px) {
@@ -171,7 +170,6 @@ body {
 	}
 }
 .youtube-button {
-	margin: 0 0 0 64px;
 	background: #ffffff;
 	box-shadow: 0px 0px 15px #0e354b0d, 0px 30px 40px #0e44621a;
 	border-radius: 30px;
@@ -189,31 +187,31 @@ body {
 	position: relative;
 	top: 0;
 	left: 0;
-	img{
+	img {
 		margin-right: 14px;
 	}
 	@media (max-width: 1365px) {
 		margin: 0 0 0 15px;
 	}
-	@media (max-width: 1100px){
-		span{
+	@media (max-width: 1100px) {
+		span {
 			display: none;
 		}
-		img{
+		img {
 			margin-right: 0;
 		}
 		box-shadow: 0 0 0 #ffffff;
 		padding: 0px;
 		border-bottom: none;
-		&:hover{
+		&:hover {
 			padding: 0px;
 			border-bottom: none;
 		}
 	}
-	@media (min-width: 1101px){
-		&:hover{
+	@media (min-width: 1101px) {
+		&:hover {
 			transition: all 0.3s ease 0s;
-			color:#f21905;
+			color: #f21905;
 			padding: 18px 38px;
 			border-bottom: none;
 			top: 3px;
@@ -222,10 +220,10 @@ body {
 	}
 	@media (max-width: 767px) {
 		margin: 0;
-		span{
+		span {
 			display: inline;
 		}
-		img{
+		img {
 			margin-right: 14px;
 		}
 		box-shadow: 0px 0px 15px #0e354b0d, 0px 30px 40px #0e44621a;
@@ -234,11 +232,144 @@ body {
 		margin-top: 50px;
 	}
 }
-.golova {
-	font-size: 50px;
-	font-family: "Montserrat", sans-serif;
-	span {
-		font-family: "Play", sans-serif;
-		font-weight: 700;
+
+// MAIN======================================================
+
+.main {
+	background: url("../img/img/main/rightimage.jpg") 79% 45% /64% no-repeat,
+		url("../img/img/main/mainbg.jpg") -10% 0 / contain no-repeat;
+	min-height: 950px;
+	padding: 300px 0 0 0;
+	//border: #f21905 1px solid;
+}
+.main__bg {
+}
+.container {
+}
+.main__slider {
+}
+.main__slider-item {
+}
+.main__slider-item-top {
+}
+.main__title {
+	letter-spacing: -0.02em;
+	text-transform: uppercase;
+	color: #ffffff;
+	font-family: "Play";
+	font-weight: bold;
+	font-size: 57px;
+	line-height: 60px;
+	max-width: 630px;
+	margin-bottom: 60px;
+}
+.main__button-container {
+}
+.main__button {
+	background: #ffffff;
+	box-shadow: 0px 0px 20px rgba(14, 53, 75, 0.05), 0px 20px 30px rgba(8, 97, 163, 0.3);
+	border-radius: 30px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 14px;
+	color: #2f384f;
+	font-family: "Play";
+	padding: 18px 80px;
+	position: relative;
+	top: 0;
+	left: 0;
+	transition: all 0.3s ease 0s;
+	&:hover {
+		transition: all 0.3s ease 0s;
+		top: 3px;
+		box-shadow: 0px 0px 5px #0e354b0d, 0px 10px 10px #0e44621a;
 	}
 }
+.main__slider-item-bottom {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin-top: 30px;
+}
+.bottom-left {
+	letter-spacing: -0.03em;
+	text-transform: uppercase;
+	font-family: "Play";
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 14px;
+	color: #ffffff;
+	span {
+		font-size: 22px;
+		position: relative;
+		left: 0;
+		top: -9px;
+	}
+	margin-bottom: 92px;
+}
+.bottom-middle {
+	position: relative;
+	top: 6px;
+	left: 0;
+}
+.bottom-right {
+	margin-bottom: 92px;
+}
+.bottom-arrows {
+}
+.bottom-mouse {
+	cursor: pointer;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	color: #065fa1;
+	font-family: "Play";
+	font-size: 12px;
+	line-height: 14px;
+	display: flex;
+	align-items: center;
+	margin-right: 100px;
+	img{
+		position: relative;
+		top: 0;
+		left: 0;
+		margin-left: 30px;
+		animation: mouseup 2s ease infinite alternate;
+		@keyframes mouseup {
+			0%{
+				top: 0;
+			}
+			100%{
+				top: -40px;
+			}
+		}
+	}
+	span{
+		position: relative;
+	}
+	span:after{
+		content: '';
+		height: 80px;
+		width: 2px;
+		display: block;
+		background: #0279C1; 
+		position: absolute;
+		top: -110px;
+		left: 163px;
+		animation: scroll 2s ease infinite alternate;
+		@keyframes scroll {
+			0%{
+				height: 80px;
+				top: -110px;
+				background: #0279C1;
+			}
+			100%{
+				height: 40px;
+				top: -150px;
+				background: #a6ff00;
+			}
+		}
+	}
+}
+

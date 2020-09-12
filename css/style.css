@@ -90,7 +90,6 @@ html,
 body {
   height: 100%;
   font-family: "Montserrat", sans-serif;
-  background-color: #353535;
 }
 
 @media (max-width: 767px) {
@@ -302,9 +301,9 @@ body {
   .header__link:hover {
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
-    color: #065FA1;
+    color: #065fa1;
     padding-bottom: 10px;
-    border-bottom: 2px solid #065FA1;
+    border-bottom: 2px solid #065fa1;
   }
 }
 
@@ -315,7 +314,6 @@ body {
 }
 
 .youtube-button {
-  margin: 0 0 0 64px;
   background: #ffffff;
   -webkit-box-shadow: 0px 0px 15px #0e354b0d, 0px 30px 40px #0e44621a;
           box-shadow: 0px 0px 15px #0e354b0d, 0px 30px 40px #0e44621a;
@@ -404,12 +402,176 @@ body {
   }
 }
 
-.golova {
-  font-size: 50px;
-  font-family: "Montserrat", sans-serif;
+.main {
+  background: url("../img/img/main/rightimage.jpg") 79% 45%/64% no-repeat, url("../img/img/main/mainbg.jpg") -10% 0/contain no-repeat;
+  min-height: 950px;
+  padding: 300px 0 0 0;
 }
 
-.golova span {
-  font-family: "Play", sans-serif;
-  font-weight: 700;
+.main__title {
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: "Play";
+  font-weight: bold;
+  font-size: 57px;
+  line-height: 60px;
+  max-width: 630px;
+  margin-bottom: 60px;
+}
+
+.main__button {
+  background: #ffffff;
+  -webkit-box-shadow: 0px 0px 20px rgba(14, 53, 75, 0.05), 0px 20px 30px rgba(8, 97, 163, 0.3);
+          box-shadow: 0px 0px 20px rgba(14, 53, 75, 0.05), 0px 20px 30px rgba(8, 97, 163, 0.3);
+  border-radius: 30px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 14px;
+  color: #2f384f;
+  font-family: "Play";
+  padding: 18px 80px;
+  position: relative;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.main__button:hover {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  top: 3px;
+  -webkit-box-shadow: 0px 0px 5px #0e354b0d, 0px 10px 10px #0e44621a;
+          box-shadow: 0px 0px 5px #0e354b0d, 0px 10px 10px #0e44621a;
+}
+
+.main__slider-item-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-top: 30px;
+}
+
+.bottom-left {
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  font-family: "Play";
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 14px;
+  color: #ffffff;
+  margin-bottom: 92px;
+}
+
+.bottom-left span {
+  font-size: 22px;
+  position: relative;
+  left: 0;
+  top: -9px;
+}
+
+.bottom-middle {
+  position: relative;
+  top: 6px;
+  left: 0;
+}
+
+.bottom-right {
+  margin-bottom: 92px;
+}
+
+.bottom-mouse {
+  cursor: pointer;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #065fa1;
+  font-family: "Play";
+  font-size: 12px;
+  line-height: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 100px;
+}
+
+.bottom-mouse img {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-left: 30px;
+  -webkit-animation: mouseup 2s ease infinite alternate;
+          animation: mouseup 2s ease infinite alternate;
+}
+
+@-webkit-keyframes mouseup {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -40px;
+  }
+}
+
+@keyframes mouseup {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -40px;
+  }
+}
+
+.bottom-mouse span {
+  position: relative;
+}
+
+.bottom-mouse span:after {
+  content: '';
+  height: 80px;
+  width: 2px;
+  display: block;
+  background: #0279C1;
+  position: absolute;
+  top: -110px;
+  left: 163px;
+  -webkit-animation: scroll 2s ease infinite alternate;
+          animation: scroll 2s ease infinite alternate;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    height: 80px;
+    top: -110px;
+    background: #0279C1;
+  }
+  100% {
+    height: 40px;
+    top: -150px;
+    background: #a6ff00;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    height: 80px;
+    top: -110px;
+    background: #0279C1;
+  }
+  100% {
+    height: 40px;
+    top: -150px;
+    background: #a6ff00;
+  }
 }

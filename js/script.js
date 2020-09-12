@@ -17,7 +17,7 @@ $(document).ready(function () {
 		}
 		if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
 			$("#logo").attr("src","img/icons/header/blacklogo.svg");
-			document.getElementById("header").style.background = "#ffffff78";
+			document.getElementById("header").style.background = " #ffffff";
 		} else {
 			$("#logo").attr("src","img/icons/header/whitelogo.svg");
 			document.getElementById("header").style.background = "transparent";
@@ -32,5 +32,9 @@ $(document).ready(function () {
 		} else{
 			$("#logo").attr("src","img/icons/header/whitelogo.svg");
 		}
+	});
+	//click on mouse teaser
+	$("#mainscreen__scrolldown").click(function (event) {
+		$('html, body').animate({scrollTop: '+=500px'}, 800);
 	});
 });
