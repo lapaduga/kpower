@@ -37,4 +37,6 @@ $(document).ready(function () {
 	$("#mainscreen__scrolldown").click(function (event) {
 		$('html, body').animate({scrollTop: '+=500px'}, 800);
 	});
+	//slick slider
+	$('.main__slider').slick();
 });
