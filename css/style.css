@@ -125,6 +125,12 @@ body {
   z-index: 2;
 }
 
+@media (max-width: 1830px) {
+  .header {
+    background-color: #fff;
+  }
+}
+
 .header__body {
   position: relative;
   display: -webkit-box;
@@ -404,9 +410,128 @@ body {
 }
 
 .main {
-  background: url("../img/img/main/rightimage.jpg") 79% 45%/64% no-repeat, url("../img/img/main/mainbg.jpg") -10% 0/contain no-repeat;
+  background: url("../img/img/main/rightimage.jpg") 79% 45%/64% no-repeat, url("../img/img/main/mainbg.jpg") -7% 0/contain no-repeat;
   min-height: 950px;
-  padding: 300px 0 0 0;
+  padding: 270px 0 0 0;
+  position: relative;
+}
+
+@media (max-width: 1600px) {
+  .main {
+    background: url("../img/img/main/rightimage.jpg") 100% 45%/64% no-repeat, url("../img/img/main/mainbg.jpg") -7% 0/contain no-repeat;
+  }
+}
+
+@media (max-width: 1365px) {
+  .main {
+    background: url("../img/img/main/rightimage.jpg") 100% 45%/80% no-repeat, url("../img/img/main/mainbg.jpg") -7% 0/contain no-repeat;
+  }
+}
+
+@media (max-width: 1280px) {
+  .main {
+    background: url("../img/img/main/rightimage.jpg") 100% 45%/90% no-repeat, url("../img/img/main/mainbg.jpg") -70% 0/contain no-repeat;
+  }
+}
+
+@media (max-width: 1100px) {
+  .main {
+    background: url("../img/img/main/mainbg.jpg") -100% 0/contain no-repeat, url("../img/img/main/rightimage.jpg") 100% 45%/110% no-repeat;
+    padding: 200px 0 0 0;
+    min-height: 900px;
+  }
+}
+
+@media (max-width: 992px) {
+  .main {
+    background: url("../img/img/main/rightimage.jpg") 130% 45%/70% no-repeat, url("../img/img/main/mainbg.jpg") 0 0/80% no-repeat;
+    padding: 100px 0 0 0;
+    min-height: 800px;
+  }
+}
+
+@media (max-width: 767px) {
+  .main {
+    background: url("../img/img/main/rightimage.jpg") 130% 45%/70% no-repeat, url("../img/img/main/mainbg.jpg") 0 0/cover no-repeat;
+  }
+}
+
+.main__slider {
+  position: relative;
+  /* Слайдер */
+  /* Слайдер запущен */
+  /* Слайдер с точками */
+  /* Ограничивающая оболочка */
+  /* Лента слайдов */
+  /* Слайд */
+  /* Слайд активный (показывается) */
+  /* Слайд основной */
+  /* Слайд по центру */
+  /* Клонированный слайд */
+  /* Стрелка */
+  /* Точки (булиты) */
+}
+
+.main__slider .slick-list {
+  overflow: hidden;
+  min-height: 700px;
+}
+
+.main__slider .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media (max-width: 1750px) {
+  .main__slider-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 1365px) {
+  .main__slider-item {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (max-width: 1100px) {
+  .main__slider-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.main__slider-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 1px;
+  width: 100%;
 }
 
 .main__title {
@@ -419,6 +544,15 @@ body {
   line-height: 60px;
   max-width: 630px;
   margin-bottom: 60px;
+}
+
+@media (max-width: 1100px) {
+  .main__title {
+    font-size: 40px;
+    line-height: 40px;
+    max-width: 509px;
+    margin-bottom: 30px;
+  }
 }
 
 .main__button {
@@ -453,41 +587,191 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
   margin-top: 30px;
 }
 
+@media (max-width: 1100px) {
+  .main__slider-item-bottom {
+    margin-top: 50px;
+  }
+}
+
 .bottom-left {
+  position: relative;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   font-family: "Play";
   font-weight: bold;
-  font-size: 36px;
+  font-size: 22px;
   line-height: 14px;
   color: #ffffff;
-  margin-bottom: 92px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0px 92px 170px;
+  /* Активная точка */
+  /* Элемент точки */
 }
 
 .bottom-left span {
-  font-size: 22px;
+  font-size: 36px;
   position: relative;
   left: 0;
-  top: -9px;
+  top: 4px;
+}
+
+.bottom-left .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  top: -14px;
+  left: 20px;
+}
+
+.bottom-left .slick-dots li {
+  list-style: none;
+  height: 30px;
+  cursor: pointer;
+}
+
+.bottom-left .slick-dots li.slick-active button {
+  background-color: #fff;
+  height: 2px;
+}
+
+.bottom-left .slick-dots li button {
+  font-size: 0;
+  width: 78px;
+  height: 2px;
+  background: #2f384f;
+}
+
+@media (max-width: 767px) {
+  .bottom-left .slick-dots li button {
+    width: 30px;
+  }
+}
+
+@media (max-width: 1365px) {
+  .bottom-left {
+    margin: 0 0 92px 20px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .bottom-left {
+    margin: 0 0 62px 20px;
+  }
 }
 
 .bottom-middle {
   position: relative;
-  top: 6px;
+  top: 56px;
   left: 0;
 }
 
+.bottom-middle img {
+  max-width: 100%;
+}
+
+@media (max-width: 1750px) {
+  .bottom-middle {
+    top: 0;
+  }
+}
+
 .bottom-right {
-  margin-bottom: 92px;
+  margin: 0 150px 60px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 19%;
+  background-color: white;
+  width: 350px;
+}
+
+@media (max-width: 1365px) {
+  .bottom-right {
+    margin: 0 20px 60px 0;
+  }
+}
+
+@media (max-width: 1100px) {
+  .bottom-right {
+    margin: 0 20px 50px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .bottom-right {
+    width: 260px;
+  }
+}
+
+.bottom-arrows {
+  background-color: white;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  height: 60px;
+  /* Стрелка влево */
+  /* Стрелка вправо */
+  /* Стрелка не активная */
+}
+
+.bottom-arrows .slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  font-size: 0;
+  height: 60px;
+  width: 30px;
+  margin: -30px 0px 0px 0px;
+}
+
+.bottom-arrows .slick-arrow.slick-prev {
+  background: url("../../img/icons/main/arrow.svg") center no-repeat;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin-right: 80px;
+  background-color: white;
+}
+
+.bottom-arrows .slick-arrow.slick-next {
+  right: 0;
+  background: url("../../img/icons/main/arrow.svg") center no-repeat;
+  background-color: white;
+}
+
+.bottom-arrows .slick-arrow.slick-disabled {
+  opacity: 0.5;
+}
+
+@media (max-width: 992px) {
+  .bottom-arrows {
+    width: 110px;
+  }
 }
 
 .bottom-mouse {
@@ -539,11 +823,11 @@ body {
 }
 
 .bottom-mouse span:after {
-  content: '';
+  content: "";
   height: 80px;
   width: 2px;
   display: block;
-  background: #0279C1;
+  background: #0279c1;
   position: absolute;
   top: -110px;
   left: 163px;
@@ -555,7 +839,7 @@ body {
   0% {
     height: 80px;
     top: -110px;
-    background: #0279C1;
+    background: #0279c1;
   }
   100% {
     height: 40px;
@@ -568,7 +852,7 @@ body {
   0% {
     height: 80px;
     top: -110px;
-    background: #0279C1;
+    background: #0279c1;
   }
   100% {
     height: 40px;
@@ -577,30 +861,23 @@ body {
   }
 }
 
-/* Слайдер */
-/* Слайдер запущен */
-/* Слайдер с точками */
-/* Ограничивающая оболочка */
-.slick-list {
-  overflow: hidden;
+@media (max-width: 767px) {
+  .bottom-mouse span:after {
+    display: none;
+  }
 }
 
-/* Лента слайдов */
-.slick-track {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media (max-width: 1365px) {
+  .bottom-mouse {
+    margin-right: 0;
+  }
 }
 
-/* Слайд */
-/* Слайд активный (показывается) */
-/* Слайд основной */
-/* Слайд по центру */
-/* Клонированный слайд */
-/* Стрелка */
-/* Стрелка влево */
-/* Стрелка вправо */
-/* Стрелка не активная */
-/* Точки (булиты) */
-/* Активная точка */
-/* Элемент точки */
+@media (max-width: 767px) {
+  .bottom-mouse {
+    margin-right: 20px;
+  }
+  .bottom-mouse img {
+    display: none;
+  }
+}
