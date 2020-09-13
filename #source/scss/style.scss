@@ -272,6 +272,9 @@ body {
 		background: url("../img/img/main/rightimage.jpg") 130% 45% /70% no-repeat,
 			url("../img/img/main/mainbg.jpg") 0 0 / cover no-repeat;
 	}
+	@media (max-width: 500px){
+		min-height: 600px;
+	}
 }
 .container {
 }
@@ -290,6 +293,9 @@ body {
 	.slick-list {
 		overflow: hidden;
 		min-height: 700px;
+		@media (max-width: 360px){
+			min-height: 550px;
+		}
 	}
 	/* Лента слайдов */
 	.slick-track {
@@ -337,6 +343,17 @@ body {
 	justify-content: space-between;
 	height: 1px;
 	width: 100%;
+	@media (max-width: 500px){
+		flex-direction: column;
+		align-items: center;
+		padding-bottom: 150px;
+	}
+	@media (max-width: 400px){
+		padding-bottom: 200px;
+	}
+	@media (max-width: 360px){
+		padding-bottom: 140px;
+	}
 }
 .main__slider-item-top {
 }
@@ -354,7 +371,14 @@ body {
 		font-size: 40px;
 		line-height: 40px;
 		max-width: 509px;
-		margin-bottom: 30px;
+		margin-bottom: 40px;
+	}
+	@media (max-width: 550px){
+		font-size: 26px;
+	}
+	@media (max-width: 360px){
+		font-size: 20px;
+		line-height: 26px;
 	}
 }
 .main__button-container {
@@ -442,13 +466,23 @@ body {
 	@media (max-width: 1100px) {
 		margin: 0 0 62px 20px;
 	}
+	@media (max-width: 767px){
+		margin: 0 0 42px 20px;
+	}
+	@media (max-width: 500px){
+		margin: 0 0 30px -10px;
+	}
+	@media (max-width: 360px){
+		margin: 0 0 10px -10px;
+	}
 }
 .bottom-middle {
 	position: relative;
 	top: 56px;
 	left: 0;
-	img{
+	video{
 		max-width: 100%;
+		cursor: pointer;
 	}
 	@media (max-width: 1750px) {
 		top: 0;
@@ -470,6 +504,11 @@ body {
 	}
 	@media (max-width: 767px) {
 		width: 260px;
+		border-radius: 15px;
+		margin: 0 20px 30px 0;
+	}
+	@media (max-width: 500px){
+		margin: 0;
 	}
 }
 .bottom-arrows {
@@ -489,15 +528,18 @@ body {
 	}
 	/* Стрелка влево */
 	.slick-arrow.slick-prev {
-		background: url("../../img/icons/main/arrow.svg") center no-repeat;
+		background: url("../img/icons/main/arrow.svg") center no-repeat;
 		transform: rotate(180deg);
 		margin-right: 80px;
 		background-color: rgb(255, 255, 255);
+		@media (max-width: 767px){
+			border-radius: 15px;
+		}
 	}
 	/* Стрелка вправо */
 	.slick-arrow.slick-next {
 		right: 0;
-		background: url("../../img/icons/main/arrow.svg") center no-repeat;
+		background: url("../img/icons/main/arrow.svg") center no-repeat;
 		background-color: rgb(255, 255, 255);
 	}
 	/* Стрелка не активная */
@@ -506,6 +548,9 @@ body {
 	}
 	@media (max-width: 992px) {
 		width: 110px;
+	}
+	@media (max-width: 767px){
+		border-radius: 15px;
 	}
 }
 .bottom-mouse {
@@ -566,10 +611,8 @@ body {
 	@media (max-width: 1365px) {
 		margin-right: 0;
 	}
-}
-.bottom-mouse {
 	@media (max-width: 767px) {
-		margin-right: 20px;
+		margin-right: 10px;
 		img {
 			display: none;
 		}
