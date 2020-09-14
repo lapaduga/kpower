@@ -789,15 +789,7 @@ body {
 
 @media (max-width: 767px) {
   .bottom-right {
-    width: 260px;
-    border-radius: 15px;
-    margin: 0 20px 30px 0;
-  }
-}
-
-@media (max-width: 500px) {
-  .bottom-right {
-    margin: 0;
+    display: none;
   }
 }
 
