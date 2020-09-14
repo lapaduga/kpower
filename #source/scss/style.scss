@@ -618,7 +618,7 @@ body {
 }
 .container {
 }
-.about__subtitle {
+.subtitle {
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
 	font-family: "Play";
@@ -631,7 +631,7 @@ body {
 		margin: 0 0 10px 0;
 	}
 }
-.about__title {
+.title {
 	font-family: "Play";
 	font-weight: bold;
 	font-size: 40px;
@@ -640,7 +640,7 @@ body {
 	text-transform: uppercase;
 	color: #2f384f;
 	margin: 0 0 80px 0;
-	span{
+	span {
 		white-space: nowrap;
 	}
 	@media (max-width: 1280px) {
@@ -649,12 +649,13 @@ body {
 	@media (max-width: 992px) {
 		margin: 0 0 20px 0;
 	}
-	@media (max-width: 767px){
+	@media (max-width: 767px) {
 		font-size: 30px;
 		line-height: 30px;
 	}
 }
 .about__body {
+	border-bottom: #31aaff 2px solid;
 }
 .about__top {
 	display: flex;
@@ -719,8 +720,8 @@ body {
 	top: 0;
 	left: 0;
 	transition: all 0.3s ease 0s;
-	@media (min-width: 993px){
-		&:hover{
+	@media (min-width: 993px) {
+		&:hover {
 			transition: all 0.3s ease 0s;
 			top: 3px;
 			box-shadow: 0px 0px 10px rgba(14, 53, 75, 0.05), 0px 10px 10px rgba(8, 97, 163, 0.3);
@@ -730,7 +731,7 @@ body {
 		letter-spacing: normal;
 		padding: 15px;
 	}
-	@media (max-width: 360px){
+	@media (max-width: 360px) {
 		font-size: 12px;
 	}
 }
@@ -779,6 +780,89 @@ body {
 	font-family: "Montserrat";
 	font-size: 13px;
 	line-height: 22px;
+	letter-spacing: -0.03em;
+	color: #2f384f;
+}
+.services {
+	margin-top: 100px;
+}
+.container {
+}
+.services__body {
+}
+.services__subtitle {
+}
+.subtitle {
+}
+.services__title {
+}
+.title {
+}
+.services__items {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.services__link {
+	border: 1px solid #eaeef1;
+	flex: 0 0 392px;
+	height: 392px;
+	padding: 66px 40px 60px 40px;
+	@media (max-width: 480px){
+		padding: 20px;
+		flex: 0 0 280px;
+		height: 390px;
+	}
+}
+.services__item {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	position: relative;
+}
+.services__item-icon {
+	display: flex;
+	align-items: center;
+	margin-bottom: 100px;
+	span {
+		font-family: "Play";
+		font-size: 30px;
+		line-height: 48px;
+		letter-spacing: -0.05em;
+		text-transform: uppercase;
+		color: #e4e9ed;
+	}
+	span::before {
+		content: "";
+		background: #e4e9ed;
+		display: inline-block;
+		height: 1px;
+		width: 56px;
+		transform: translate(0, -10px);
+		margin: 0 12px;
+	}
+	img {
+		height: 50px;
+	}
+}
+.services__item-title {
+	position: absolute;
+	top: 90px;
+	left: 0;
+	font-family: "Play";
+	font-weight: bold;
+	font-size: 20px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #131314;
+	@media (max-width: 480px){
+		font-size: 16px;
+	}
+}
+.services__item-text {
+	font-family: "Montserrat";
+	font-size: 12px;
+	line-height: 17px;
 	letter-spacing: -0.03em;
 	color: #2f384f;
 }
