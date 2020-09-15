@@ -1682,3 +1682,24 @@ body {
     line-height: 14px;
   }
 }
+
+.footer__top {
+  background: #293446;
+}
+
+.footer__top-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 520px;
+}
+
+.footer__bottom {
+  background: #141A26;
+}
