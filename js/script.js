@@ -37,7 +37,7 @@ $(document).ready(function () {
 	$("#mainscreen__scrolldown").click(function (event) {
 		$('html, body').animate({ scrollTop: '+=500px' }, 800);
 	});
-	//slick slider
+	//slick slider main
 	$('.main__slider').slick({
 		arrows: true,
 		dots: true,
@@ -63,5 +63,21 @@ $(document).ready(function () {
 	$('.main__slider').on('afterChange', function (event, slick, currentSlide) {
 		$('#change-num').text('0' + (currentSlide + 1));
 	});
-	//video adaptation
+	//slick slider testimonials
+	$('.testimonials__left-slider').slick({
+		arrows: false,
+		adaptiveHeight: true,
+		infinite: false,
+		touchThreshold: 10,
+		fade: true,
+		asNavFor:".testimonials__right-slider"
+	});
+	$('.testimonials__right-slider').slick({
+		arrows: true,
+		dots: true,
+		adaptiveHeight: true,
+		infinite: false,
+		touchThreshold: 20,
+		asNavFor:".testimonials__left-slider"
+	});
 });
