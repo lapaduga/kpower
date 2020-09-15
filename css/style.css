@@ -1330,7 +1330,6 @@ body {
   height: 392px;
   padding: 66px 40px 60px 40px;
   overflow: hidden;
-  margin: 50px 0 0 0;
   -webkit-transition: all 0.8s ease 0.8s;
   transition: all 0.8s ease 0.8s;
   -webkit-transform: scale(-1, 1);
