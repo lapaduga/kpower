@@ -93,10 +93,6 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 @media (max-width: 767px) {
   body.lock {
     overflow: hidden;
@@ -468,11 +464,6 @@ body {
 
 .main__slider {
   position: relative;
-  -webkit-transform: translate(0, -120%);
-          transform: translate(0, -120%);
-  opacity: 0;
-  -webkit-transition: all 0.8s ease 0s;
-  transition: all 0.8s ease 0s;
   /* Ограничивающая оболочка */
   /* Лента слайдов */
 }
@@ -501,12 +492,6 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-}
-
-.main__slider._active {
-  -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
-  opacity: 1;
 }
 
 @media (max-width: 1750px) {
@@ -985,11 +970,6 @@ body {
   color: #065fa1;
   text-align: center;
   margin: 0 0 27px 0;
-  -webkit-transform: translate(-200%, 0);
-          transform: translate(-200%, 0);
-  opacity: 0;
-  -webkit-transition: all ease 0.8s 0s;
-  transition: all ease 0.8s 0s;
 }
 
 @media (max-width: 992px) {
@@ -998,18 +978,7 @@ body {
   }
 }
 
-.subtitle._active {
-  -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
-  opacity: 1;
-}
-
 .title {
-  -webkit-transform: translate(200%, 0);
-          transform: translate(200%, 0);
-  opacity: 0;
-  -webkit-transition: all ease 0.8s 0.4s;
-  transition: all ease 0.8s 0.4s;
   font-family: "Play";
   font-weight: bold;
   font-size: 40px;
@@ -1022,12 +991,6 @@ body {
 
 .title span {
   white-space: nowrap;
-}
-
-.title._active {
-  -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
-  opacity: 1;
 }
 
 @media (max-width: 1280px) {
@@ -1087,21 +1050,10 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
-  -webkit-transform: rotate3d(1, 1, 1, 120deg);
-          transform: rotate3d(1, 1, 1, 120deg);
-  opacity: 0;
-  -webkit-transition: all ease 0.8s 0.4s;
-  transition: all ease 0.8s 0.4s;
 }
 
 .about__image img {
   max-width: 100%;
-}
-
-.about__image._active {
-  -webkit-transform: rotate3d(1, 1, 1, 0deg);
-          transform: rotate3d(1, 1, 1, 0deg);
-  opacity: 1;
 }
 
 @media (max-width: 1280px) {
@@ -1130,23 +1082,7 @@ body {
   color: #131314;
 }
 
-.about__info p {
-  -webkit-transition: all 0.8s ease 0.4s;
-  transition: all 0.8s ease 0.4s;
-  -webkit-transform: translate(0, 120%);
-          transform: translate(0, 120%);
-  opacity: 0;
-}
-
-.about__info p._active {
-  -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
-  opacity: 1;
-}
-
 .about__info p:first-child {
-  -webkit-transition: all 0.8s ease 0.2s;
-  transition: all 0.8s ease 0.2s;
   font-weight: 600;
   line-height: 26px;
   letter-spacing: -0.01em;
@@ -1166,17 +1102,6 @@ body {
 
 .about__button-container {
   margin: 50px 0 0 0;
-  -webkit-transition: all 0.8s ease 0.8s;
-  transition: all 0.8s ease 0.8s;
-  -webkit-transform: translate(0, 120%);
-          transform: translate(0, 120%);
-  opacity: 0;
-}
-
-.about__button-container._active {
-  -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
-  opacity: 1;
 }
 
 .about__button {
@@ -1330,17 +1255,6 @@ body {
   height: 392px;
   padding: 66px 40px 60px 40px;
   overflow: hidden;
-  -webkit-transition: all 0.8s ease 0.8s;
-  transition: all 0.8s ease 0.8s;
-  -webkit-transform: scale(-1, 1);
-          transform: scale(-1, 1);
-  opacity: 0;
-}
-
-.services__link._active {
-  -webkit-transform: scale(1, 1);
-          transform: scale(1, 1);
-  opacity: 1;
 }
 
 @media (min-width: 993px) {
