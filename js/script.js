@@ -80,4 +80,10 @@ $(document).ready(function () {
 		touchThreshold: 20,
 		asNavFor:".testimonials__left-slider"
 	});
+	//scroll to beginnig by click
+	$("#callme").click(function() { // ID откуда кликаем
+		$('html, body').animate({
+			scrollTop: $(".main").offset().top  // класс объекта к которому приезжаем
+		}, 1000); // Скорость прокрутки
+	});
 });
