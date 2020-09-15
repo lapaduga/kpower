@@ -277,6 +277,31 @@ body {
 	margin: 0 auto;
 	padding: 0 15px;
 }
+.general__main {
+	min-height: 400px;
+	background: url('../img/img/articlesMain/articlesMainBg.jpg') right center / contain no-repeat, #F1F6FC;
+	margin-top: 161px;
+	display: flex;
+}
+.general__body {
+	background: #FFFFFF;
+box-shadow: 0px 6px 24px rgba(2, 67, 193, 0.1);
+height: 300px;
+max-width: 818px;
+}
+.general__breadcrumbs {
+}
+.breadcrumbs-link {
+}
+.general-title {
+	font-family: 'Play';
+font-weight: bold;
+font-size: 36px;
+line-height: 48px;
+letter-spacing: -0.02em;
+text-transform: uppercase;
+color: #2F384F;
+}
 
 // Footer ===================================
 
