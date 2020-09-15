@@ -548,12 +548,6 @@ body {
           justify-content: space-between;
   height: 1px;
   width: 100%;
-  /* @media (max-width: 400px) {
-		padding-bottom: 200px;
-	}
-	@media (max-width: 360px) {
-		padding-bottom: 60px;
-	} */
 }
 
 @media (max-width: 500px) {
@@ -566,6 +560,12 @@ body {
         -ms-flex-align: center;
             align-items: center;
     padding-bottom: 60px;
+  }
+}
+
+@media (max-width: 320px) {
+  .main__slider-bottom {
+    padding-bottom: 90px;
   }
 }
 
@@ -1977,6 +1977,7 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     min-height: 200px;
+    padding-bottom: 50px;
   }
 }
 

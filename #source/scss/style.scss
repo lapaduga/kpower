@@ -346,12 +346,9 @@ body {
 		align-items: center;
 		padding-bottom: 60px;
 	}
-	/* @media (max-width: 400px) {
-		padding-bottom: 200px;
-	}
-	@media (max-width: 360px) {
-		padding-bottom: 60px;
-	} */
+	@media (max-width: 320px) {
+		padding-bottom: 90px;
+	} 
 }
 .main__slider-item-top {
 }
@@ -1373,6 +1370,7 @@ body {
 		flex-direction: column;
 		justify-content: center;
 		min-height: 200px;
+		padding-bottom: 50px;
 	}
 }
 .footer__bottom-left {
