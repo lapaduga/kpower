@@ -31,4 +31,20 @@ $(document).ready(function () {
 			scrollTop: $(".general__main").offset().top  // класс объекта к которому приезжаем
 		}, 1000); // Скорость прокрутки
 	});
+	//checkbox
+	$.each($('.checkbox'), function(index, val){
+		if($(this).find('input').prop('checked')==true){
+			$(this).addClass('active');
+		}
+	});
+	$(document).on('click', '.checkbox', function(event){
+		if ($(this).hasClass('active')) {
+			$(this).find('input').prop('checked', false);
+		} else {
+			$(this).find('input').prop('checked', true);
+		}
+		$(this).toggleClass('active');
+
+		return false;
+	});
 });
