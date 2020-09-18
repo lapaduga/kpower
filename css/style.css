@@ -1816,6 +1816,10 @@ body {
   color: #878e9d;
 }
 
+.footer__menu-link:hover {
+  text-decoration: underline;
+}
+
 .footer__top-contacts {
   font-family: "Play";
   font-size: 20px;
