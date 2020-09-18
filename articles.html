@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width">
-	<meta name="description" content=""/>
+	<meta name="description" content="" />
 	<meta name="keywords" content="" />
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Play:wght@400;700&display=swap"
 		rel="stylesheet">
@@ -67,17 +67,60 @@
 			<div class="container">
 				<div class="articles__body">
 					<div class="articles__left">
+						<form action="#" class="articles__form">
+							<div class="articles__search-body">
+								<div class="articles__search-unit">
+									<input placeholder="Поиск по статьям" type="text" class="articles__search">
+									<div class="articles__search-icon">
+										<a href="#">
+											<img src="img/icons/articles/search.svg" alt="">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="articles__sort-body">
+								<div class="sort-title">Категории статей</div>
+								<ul class="sort-list">
+									<li>
+										<p class="checkbox"><input type="checkbox" checked name="tuning"
+												class="sort-checkbox"> Чип-тюнинг</p>
+									</li>
+									<li>
+										<p class="checkbox"><input type="checkbox" name="сamshaft"
+												class="sort-checkbox"> Распредвалы</p>
+									</li>
+									<li>
+										<p class="checkbox"><input type="checkbox" name="sundry" class="sort-checkbox">
+											Разное</p>
+									</li>
+									<li>
+										<p class="checkbox"><input type="checkbox" name="gearbox" class="sort-checkbox">
+											КПП</p>
+									</li>
+									<li>
+										<p class="checkbox"><input type="checkbox" name="bad" class="sort-checkbox">
+											Негативные отзывы</p>
+									</li>
+									<li>
+										<p class="checkbox"><input type="checkbox" name="tech" class="sort-checkbox">
+											Технологии: Капремонт двигателя</p>
+									</li>
+								</ul>
+							</div>
+						</form>
 						<div class="articles__items">
 							<div class="articles__item">
 								<div class="articles__item-image">
-									<img src="img/img/articlesMain/article1.jpg" alt="">
-									<div class="articles__item-date">
-										10 июня 2014
-									</div>
+									<a href="#">
+										<img src="img/img/articlesMain/article1.jpg" alt="">
+										<div class="articles__item-date">
+											10 июня 2014
+										</div>
+									</a>
 								</div>
 								<div class="articles__item-info">
 									<h2 class="articles__item-title">
-										Почему умирает мотор /умерщвленный костлявой рукой чиповщика/
+										<a href="#">Почему умирает мотор /умерщвленный костлявой рукой чиповщика/</a>
 									</h2>
 									<div class="articles__item-author">
 										Автор статьи, фото-видео материалов: © Квазар
@@ -100,14 +143,16 @@
 							</div>
 							<div class="articles__item">
 								<div class="articles__item-image">
-									<img src="img/img/articlesMain/article2.jpg" alt="">
-									<div class="articles__item-date">
-										14 февраля 2010
-									</div>
+									<a href="#">
+										<img src="img/img/articlesMain/article2.jpg" alt="">
+										<div class="articles__item-date">
+											14 февраля 2010
+										</div>
+									</a>
 								</div>
 								<div class="articles__item-info">
 									<h3 class="articles__item-title">
-										Распредвалы Нуждин для Оки - аналитический обзор от K-POWER
+										<a href="#">Распредвалы Нуждин для Оки - аналитический обзор от K-POWER</a>
 									</h3>
 									<div class="articles__item-author">
 										Автор статьи, фото-видео материалов: © Квазар
@@ -130,14 +175,16 @@
 							</div>
 							<div class="articles__item">
 								<div class="articles__item-image">
-									<img src="img/img/articlesMain/article3.jpg" alt="">
-									<div class="articles__item-date">
-										15 октября 2009
-									</div>
+									<a href="#">
+										<img src="img/img/articlesMain/article3.jpg" alt="">
+										<div class="articles__item-date">
+											15 октября 2009
+										</div>
+									</a>
 								</div>
 								<div class="articles__item-info">
 									<div class="articles__item-title">
-										Фальш-головка 2112 для расточки блоков 2108\2112 под заказ
+										<a href="#">Фальш-головка 2112 для расточки блоков 2108\2112 под заказ</a>
 									</div>
 									<div class="articles__item-author">
 										Автор статьи, фото-видео материалов: © Квазар
@@ -161,14 +208,16 @@
 							</div>
 							<div class="articles__item">
 								<div class="articles__item-image">
-									<img src="img/img/articlesMain/article4.jpg" alt="">
-									<div class="articles__item-date">
-										30 августа 2009
-									</div>
+									<a href="#">
+										<img src="img/img/articlesMain/article4.jpg" alt="">
+										<div class="articles__item-date">
+											30 августа 2009
+										</div>
+									</a>
 								</div>
 								<div class="articles__item-info">
 									<div class="articles__item-title">
-										Влияние форсунок охлаждения поршней (опыт из практики)
+										<a href="#">Влияние форсунок охлаждения поршней (опыт из практики)</a>
 									</div>
 									<div class="articles__item-author">
 										Автор статьи, фото-видео материалов: © Квазар
@@ -198,6 +247,65 @@
 								<li><a href="#" class="articles__link"></a></li>
 							</ul>
 						</div>
+						<div class="articles__last">
+							<div class="articles__last-title">
+								Последние статьи
+							</div>
+							<div class="articles__last-items">
+								<a href="#" class="articles__last-item">
+									<div class="articles__last-item-image">
+										<img src="img/img/articlesMain/why.jpg" alt="">
+									</div>
+									<div class="articles__last-item-info">
+										<div class="info-title">
+											Почему умирает мотор /умерщвленный костлявой рукой чиповщика/
+										</div>
+										<div class="info-date">
+											10 июня 2014
+										</div>
+									</div>
+								</a>
+								<a href="#" class="articles__last-item">
+									<div class="articles__last-item-image">
+										<img src="img/img/articlesMain/shafts.jpg" alt="">
+									</div>
+									<div class="articles__last-item-info">
+										<div class="info-title">
+											Распредвалы Нуждин для Оки - аналитический обзор от K-POWER
+										</div>
+										<div class="info-date">
+											10 июня 2014
+										</div>
+									</div>
+								</a>
+								<a href="#" class="articles__last-item">
+									<div class="articles__last-item-image">
+										<img src="img/img/articlesMain/why.jpg" alt="">
+									</div>
+									<div class="articles__last-item-info">
+										<div class="info-title">
+											Почему умирает мотор /умерщвленный костлявой рукой чиповщика/
+										</div>
+										<div class="info-date">
+											10 июня 2014
+										</div>
+									</div>
+								</a>
+								<a href="#" class="articles__last-item">
+									<div class="articles__last-item-image">
+										<img src="img/img/articlesMain/shafts.jpg" alt="">
+									</div>
+									<div class="articles__last-item-info">
+										<div class="info-title">
+											Распредвалы Нуждин для Оки - аналитический обзор от K-POWER
+										</div>
+										<div class="info-date">
+											10 июня 2014
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
 					</div>
 					<div class="articles__right">
 						<form action="#" class="articles__form">
@@ -215,22 +323,28 @@
 								<div class="sort-title">Категории статей</div>
 								<ul class="sort-list">
 									<li>
-										<p class="checkbox"><input type="checkbox" checked name="tuning" class="sort-checkbox"> Чип-тюнинг</p>
+										<p class="checkbox"><input type="checkbox" checked name="tuning"
+												class="sort-checkbox"> Чип-тюнинг</p>
 									</li>
 									<li>
-										<p class="checkbox"><input type="checkbox" name="сamshaft" class="sort-checkbox"> Распредвалы</p>
+										<p class="checkbox"><input type="checkbox" name="сamshaft"
+												class="sort-checkbox"> Распредвалы</p>
 									</li>
 									<li>
-										<p class="checkbox"><input type="checkbox" name="sundry" class="sort-checkbox"> Разное</p>
+										<p class="checkbox"><input type="checkbox" name="sundry" class="sort-checkbox">
+											Разное</p>
 									</li>
 									<li>
-										<p class="checkbox"><input type="checkbox" name="gearbox" class="sort-checkbox"> КПП</p>
+										<p class="checkbox"><input type="checkbox" name="gearbox" class="sort-checkbox">
+											КПП</p>
 									</li>
 									<li>
-										<p class="checkbox"><input type="checkbox" name="bad" class="sort-checkbox"> Негативные отзывы</p>
+										<p class="checkbox"><input type="checkbox" name="bad" class="sort-checkbox">
+											Негативные отзывы</p>
 									</li>
 									<li>
-										<p class="checkbox"><input type="checkbox" name="tech" class="sort-checkbox"> Технологии: Капремонт двигателя</p>
+										<p class="checkbox"><input type="checkbox" name="tech" class="sort-checkbox">
+											Технологии: Капремонт двигателя</p>
 									</li>
 								</ul>
 							</div>
