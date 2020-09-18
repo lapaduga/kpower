@@ -598,6 +598,13 @@ body {
 	color: #065fa1;
 	text-align: center;
 	margin: 0 0 27px 0;
+	transform: translate(0, 120%);
+	opacity: 0;
+	transition: all 0.8s ease 0s;
+	&._active {
+		transform: translate(0, 0);
+		opacity: 1;
+	}
 	@media (max-width: 992px) {
 		margin: 0 0 10px 0;
 	}
@@ -611,6 +618,13 @@ body {
 	text-transform: uppercase;
 	color: #2f384f;
 	margin: 0 0 80px 0;
+	transform: translate(0, 120%);
+	opacity: 0;
+	transition: all 0.8s ease 0.2s;
+	&._active {
+		transform: translate(0, 0);
+		opacity: 1;
+	}
 	span {
 		white-space: nowrap;
 	}
@@ -642,6 +656,14 @@ body {
 }
 .about__image {
 	flex: 1 1 50%;
+	transform: scale(1,0);
+	opacity: 0;
+	transition: all 0.8s ease 0s;
+	&._active {
+		transition: all 0.8s ease 0.3s;
+		transform: scale(1,1);
+		opacity: 1;
+	}
 	img {
 		max-width: 100%;
 	}
@@ -1471,7 +1493,7 @@ body {
 	margin-bottom: 20px;
 	a {
 		color: #626874;
-		&:hover{
+		&:hover {
 			text-decoration: underline;
 		}
 	}
@@ -2081,7 +2103,7 @@ body {
 .contacts-page {
 	margin-top: 50px;
 	margin-bottom: 50px;
-	@media (max-width: 767px){
+	@media (max-width: 767px) {
 		margin-top: 20px;
 		margin-bottom: 20px;
 	}
@@ -2089,7 +2111,7 @@ body {
 .contacts-page-info {
 	display: flex;
 	margin-bottom: 50px;
-	@media (max-width: 767px){
+	@media (max-width: 767px) {
 		flex-direction: column-reverse;
 		margin-bottom: 10px;
 	}
@@ -2112,7 +2134,7 @@ body {
 		color: #0279c1;
 		font-weight: 600;
 	}
-	@media (max-width: 767px){
+	@media (max-width: 767px) {
 		margin-right: 0;
 	}
 }
@@ -2141,28 +2163,28 @@ body {
 		max-width: 486px;
 		padding-top: 20px;
 	}
-	@media (max-width: 767px){
+	@media (max-width: 767px) {
 		margin-bottom: 20px;
 		padding: 20px;
 		font-size: 16px;
 	}
 }
 .contacts-page-bottom {
-	font-family: 'Montserrat';
-font-weight: 400;
-font-size: 16px;
-line-height: 21px;
-letter-spacing: -0.02em;
-color: #131314;
+	font-family: "Montserrat";
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 21px;
+	letter-spacing: -0.02em;
+	color: #131314;
 	p {
 		margin-bottom: 10px;
 	}
-	span{
+	span {
 		font-weight: 600;
 	}
-	a{
-		color: #31AAFF;
-		&:hover{
+	a {
+		color: #31aaff;
+		&:hover {
 			text-decoration: underline;
 		}
 	}
@@ -2171,7 +2193,7 @@ color: #131314;
 	font-weight: 600;
 	font-size: 24px;
 	margin-bottom: 40px;
-	@media (max-width: 767px){
+	@media (max-width: 767px) {
 		margin-bottom: 20px;
 	}
 }

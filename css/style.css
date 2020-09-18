@@ -970,6 +970,17 @@ body {
   color: #065fa1;
   text-align: center;
   margin: 0 0 27px 0;
+  -webkit-transform: translate(0, 120%);
+          transform: translate(0, 120%);
+  opacity: 0;
+  -webkit-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+}
+
+.subtitle._active {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  opacity: 1;
 }
 
 @media (max-width: 992px) {
@@ -987,6 +998,17 @@ body {
   text-transform: uppercase;
   color: #2f384f;
   margin: 0 0 80px 0;
+  -webkit-transform: translate(0, 120%);
+          transform: translate(0, 120%);
+  opacity: 0;
+  -webkit-transition: all 0.8s ease 0.2s;
+  transition: all 0.8s ease 0.2s;
+}
+
+.title._active {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  opacity: 1;
 }
 
 .title span {
@@ -1050,6 +1072,19 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
+  -webkit-transform: scale(1, 0);
+          transform: scale(1, 0);
+  opacity: 0;
+  -webkit-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+}
+
+.about__image._active {
+  -webkit-transition: all 0.8s ease 0.3s;
+  transition: all 0.8s ease 0.3s;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  opacity: 1;
 }
 
 .about__image img {
@@ -3130,7 +3165,7 @@ body {
 }
 
 .contacts-page-bottom {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
@@ -3147,7 +3182,7 @@ body {
 }
 
 .contacts-page-bottom a {
-  color: #31AAFF;
+  color: #31aaff;
 }
 
 .contacts-page-bottom a:hover {
