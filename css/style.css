@@ -2149,6 +2149,10 @@ body {
   color: #626874;
 }
 
+.general__breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
 .general__breadcrumbs span {
   color: #065fa1;
   margin: 0 5px;
