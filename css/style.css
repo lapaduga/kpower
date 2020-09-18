@@ -2203,6 +2203,16 @@ body {
   }
 }
 
+.article__main-modifier {
+  background: url("../img/img/servicesMain/articlebg.jpg") right center/contain no-repeat, #f1f6fc;
+}
+
+@media (max-width: 1024px) {
+  .article__main-modifier {
+    background: url("../img/img/servicesMain/articlebg.jpg") center/cover no-repeat;
+  }
+}
+
 .articles {
   margin-top: 50px;
   margin-bottom: 80px;
@@ -2213,6 +2223,10 @@ body {
     margin-top: 20px;
     margin-bottom: 20px;
   }
+}
+
+.article-modifier {
+  margin-bottom: 50px;
 }
 
 .articles__body {
@@ -2899,4 +2913,108 @@ body {
   line-height: 22px;
   letter-spacing: -0.02em;
   color: #878e9d;
+}
+
+.article__title {
+  font-family: "Play";
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 38px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  .article__title {
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 360px) {
+  .article__title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.article__author-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 992px) {
+  .article__author-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.article__date {
+  font-family: "Play";
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #31aaff;
+  padding: 10px 54px;
+  margin-right: 24px;
+}
+
+@media (max-width: 1080px) {
+  .article__date {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 992px) {
+  .article__date {
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .article__date {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+  }
+}
+
+.article__author {
+  font-family: "Montserrat";
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.02em;
+  color: #878e9d;
+}
+
+.article__text {
+  font-family: "Montserrat";
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.02em;
+  color: #131314;
+}
+
+.article__text p {
+  margin-bottom: 8px;
+}
+
+.article__text img {
+  max-width: 100%;
+  margin: 20px 0;
 }
