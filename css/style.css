@@ -1232,6 +1232,11 @@ body {
   }
 }
 
+.services-modifier {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 .services__items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2185,6 +2190,16 @@ body {
 @media (max-width: 360px) {
   .general-title {
     font-size: 22px;
+  }
+}
+
+.services__main-modifier {
+  background: url("../img/img/servicesMain/servicesbg.jpg") right center/contain no-repeat, #f1f6fc;
+}
+
+@media (max-width: 1024px) {
+  .services__main-modifier {
+    background: url("../img/img/servicesMain/servicesbg.jpg") center/cover no-repeat;
   }
 }
 
