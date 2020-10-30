@@ -1900,7 +1900,7 @@ body {
     margin-left: 0px;
     margin-top: 20px;
     margin-bottom: 20px;
-    height: none;
+    height: auto;
     min-height: 170px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
